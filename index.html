@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloTronics</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/88381571ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <img src="imgs/logo.png" alt="" class="logo">
+    <nav id="menuInicial">
+        <div class="container">
+            <a href="index.html" class="opc">Inicio</a>
+            <a href="/html/nosotros.html" class="opc">Nosotros</a>
+            <a href="#" class="opc" onclick="abrirProductos()">Productos</a>
+            <a href="/html/admin.html" class="opc">Administrar</a>
+        </div>
+    </nav>
+
+    <nav class="menuProductos-Invisible" id="btnProductos">
+        <a class="opcProductos" href="#">Notebooks</a>
+        <a class="opcProductos" href="#">Componentes</a>
+        <a class="opcProductos" href="#">Perifericos</a>
+        <a class="opcProductos" href="#">Tablets</a>
+        <a class="opcProductos" href="#">Celulares</a>
+        <a class="opcProductos" href="#">Comodidad</a>
+    </nav>
+
+    <div id="menuHambur">
+        <button id="btnMenuMobile" onclick="abrirMenu()"><i class="fa-solid fa-bars"></i></button>
+    </div>
+
+    <nav class="menuMobile">
+        <div class="menuMobile-Invisible" id="menuQuery">
+            <a href="index.html" class="opc">Inicio</a>
+            <a href="/html/nosotros.html" class="opc">Nosotros</a>
+            <a href="#" class="opc" onclick="abrirProductos()"">Productos</a>
+            <a href="/html/admin.html" class="opc">Administrar</a>
+        </div>
+    </nav>
+    </header>
+
+    <div class="banner">
+        <img src="imgs/bannerArg.jpg" alt="">
+    </div>
+
+    <div class="cartas">
+        <div class="carta">
+            <img src="imgs/notebooks.webp" alt="">
+            <h3 class="textoCarta">ELEGÍ TU NOTEBOOK</h3>
+        </div>
+        <div class="carta">
+            <img src="imgs/listosParaBatalla.webp" alt="">
+            <h3 class="textoCarta">LISTOS PARA LA BATALLA</h3>
+        </div>
+        <div class="carta">
+            <img src="imgs/imaginacion.webp" alt="">
+            <h3 class="textoCarta">EXPLOTA TU CREATIVIDAD</h3>
+        </div>
+        <div class="carta">
+            <img src="imgs/comodidad.webp" alt="">
+            <h3 class="textoCarta">CONFORT PARA GANAR</h3>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="redes">
+                <a id="red-link" target="_blank" href="https://www.instagram.com/"> <img src="imgs/ig.png" alt="Instagram"></a>
+                <a id="red-link" target="_blank" href="https://www.facebook.com/"><img src="imgs/face.png" alt="Facebook"></a>
+                <a id="red-link" target="_blank" href="https://x.com/"><img src="imgs/x.png" alt="Twitter" ></a>
+                <p>Número de teléfono: +123456789</p>
+                <p>Correo electrónico: hellotronics@empresa.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

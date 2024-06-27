@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/88381571ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script src="/js/header.js"></script>
+
+    <div class="tablaProductos">
+        <h1>Tabla de Productos</h1>
+
+        <table >
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Titulo</th>
+                    <th>PrecioARS</th>
+                    <th>PrecioUSD</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody class="listaProductos">
+            </tbody>
+            
+        </table>
+        <button class="btnAgregar">Agregar</button>
+    </div>
+    
+    <div class="abm">
+        <div class="crear" id="cartel">
+            <h1>Nuevo Producto</h1>
+
+            <p>Título: <input id="titulo" type="text" placeholder="Ingrese el título"></p>
+            <p>Precio en Pesos: <input id="precioARS" type="number" placeholder="Ingrese el precio ARS"></p>
+            <p>Precio en Dolares: <input id="precioUSD" type="number" placeholder="Ingrese el precio USD"></p>
+            <p>Fecha: <input id="fecha" type="date"></p>
+
+            <button id="crear" onclick="crearProducto()">Crear</button>
+    
+        </div>
+    
+        <div class="modificar" id="cartel">
+            <h1>Modificar Producto</h1>
+            <p>Id: <input id="idMod" type="text" readonly></p> 
+            <p>Título: <input id="tituloMod" type="text"></p> 
+            <p>Precio en Pesos: <input id="precioArsMod" type="number"></p>
+            <p>Precio en Dolares: <input id="precioUsdMod" type="number"></p>
+            <p>Fecha: <input id="fechaMod" type="date"></p>  
+
+            <button id="modificar" onclick="modificarProducto()">Modificar</button>
+        </div>
+    </div>
+    
+
+    <script src="/js/footer.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
